@@ -12,8 +12,10 @@ divisible by all of the numbers from 1 to 20?
 Author: Adam Beagle
 """
 
+from Timer import Timer
+
 ################################################################################
-def CheckDivisibleByAllInRange(n, start, stop):
+def CheckDivisibleByAll(n, start, stop):
     """
     Returns true if an integer n is evenly divisible by
     all integers in range start - stop, inclusive.
@@ -28,12 +30,22 @@ def CheckDivisibleByAllInRange(n, start, stop):
 
     return True
 
+#-----------------------------------------------------------------------------
+def Prob5():
+    n = 20*19
+
+    #Don't need to check 1-10; Will be covered with range 11-19.
+    #Also don't need to check 20, as only multiples of 20 being tested.
+    while not CheckDivisibleByAll(n, 11, 19):
+        n += 20                                         
+
+    return n
+
 ################################################################################
-n = 20*19
+if __name__ == '__main__':
+    try:
+        with Timer() as timer:
+            print 'Answer: ' + str(Prob5())
+    finally:
+        print 'Time: %.5fs' % timer.Interval
 
-#Don't need to check 1-10; Will be covered with range 11-19.
-#Also don't need to check 20, as only multiples of 20 being tested.
-while not CheckDivisibleByAllInRange(n, 11, 19):
-    n += 20                                         
-
-print 'Answer:', n

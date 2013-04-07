@@ -10,8 +10,31 @@ What is the 10,001st prime number?
 Author: Adam Beagle
 """
 from math import sqrt, log
+from Timer import Timer
 
 ################################################################################
+def Prob7():
+    desiredPrime = 10001
+    upperLimit = 10**4  #arbitary starting point
+    limitMult = 5
+
+    #Number of primes below a given n is approximately n / ln n
+    #The above fact is used to approximate a suitable upper limit for the sieve.
+    while (upperLimit / log(upperLimit)) <= desiredPrime:
+        upperLimit *= limitMult
+
+    primes = SieveOfEratosthenes(upperLimit)
+
+    #If approximated upper limit was insufficient, ask user if reattempt desired.
+    while len(primes) < desiredPrime:
+        print 'WARNING: upperLimit too low. %d primes found below %d.' % (len(primes), upperLimit)
+        print 'Reattempting with upperLimit * %d\n' % limitMult
+        upperLimit *= limitMult
+        primes = SieveOfEratosthenes(upperLimit)
+        
+    return primes[desiredPrime - 1]
+
+#-----------------------------------------------------------------------------
 def SieveOfEratosthenes(limit):
     """Returns list of primes <= limit, in increasing order."""
     sieve = [True] * (limit + 1)
@@ -29,26 +52,14 @@ def SieveOfEratosthenes(limit):
         i += 1
 
     return [index for index,value in enumerate(sieve) if index >= 2 and value]
+
             
-
 ################################################################################
+if __name__ == '__main__':
+    try:
+        with Timer() as timer:
+            print 'Answer: ' + str(Prob7())
+    finally:
+        print 'Time: %.5fs' % timer.Interval
 
-desiredPrime = 10001
-upperLimit = 10**4  #arbitary starting point
-limitMult = 5
 
-#Number of primes below a given n is approximately n / ln n
-#The above fact is used to approximate a suitable upper limit for the sieve.
-while (upperLimit / log(upperLimit)) <= desiredPrime:
-    upperLimit *= limitMult
-
-primes = SieveOfEratosthenes(upperLimit)
-
-#If approximated upper limit was insufficient, ask user if reattempt desired.
-while len(primes) < desiredPrime:
-    print 'WARNING: upperLimit too low. %d primes found below %d.' % (len(primes), upperLimit)
-    print 'Reattempting with upperLimit * %d\n' % limitMult
-    upperLimit *= limitMult
-    primes = SieveOfEratosthenes(upperLimit)
-    
-print 'Answer:', primes[desiredPrime - 1]

@@ -8,6 +8,7 @@ Author: Adam Beagle
 """
 
 from os import path
+from Timer import Timer
 
 ################################################################################
 def Prob8(filename):
@@ -23,18 +24,16 @@ def Prob8(filename):
 
     for i in xrange(len(bignum) - 4):
         five = [int(n) for n in bignum[i:i+5]]
-        prod = DoOneProduct(five)
+        prod = ListProduct(five)
         
         if prod > highProd:
             highProd = prod
             highFive = five
-
-    print 'Answer:', highProd
-    print highFive
-        
-
-#--------------------------------------------------
-def DoOneProduct(nums):
+    
+    return highFive, highProd
+   
+#-----------------------------------------------------------------------------
+def ListProduct(nums):
     prod = 1
     
     for n in nums:
@@ -42,8 +41,15 @@ def DoOneProduct(nums):
 
     return prod
 
-    
+
 ################################################################################
 if __name__ == '__main__':
-    fName = path.join('..', 'res', 'bignum.txt')
-    Prob8(fName)
+    try:
+        with Timer() as timer:
+            fName = path.join('..', 'res', 'bignum.txt')
+            factors, product = Prob8(fName)
+            operation = str(product) + ' = ' + " x ".join([str(n) for n in factors])
+            print 'Answer:', operation
+    finally:
+        print 'Time: %.5fs' % timer.Interval
+

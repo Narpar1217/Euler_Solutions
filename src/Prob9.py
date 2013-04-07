@@ -12,6 +12,8 @@ Find the product abc.
 Author: Adam Beagle
 """
 
+from Timer import Timer
+
 ################################################################################
 def GetPythagTriplets(sum):
     """
@@ -30,7 +32,20 @@ def GetPythagTriplets(sum):
 
     return triplets
 
+#-----------------------------------------------------------------------------
+def Prob9():
+    triplet = GetPythagTriplets(1000)[0]
+
+    return triplet, triplet[0] * triplet[1] * triplet[2]
+
+
 ################################################################################
-triplet = GetPythagTriplets(1000)[0]
-print 'Triplet:', triplet
-print 'Answer:', triplet[0] * triplet[1] * triplet[2]
+if __name__ == '__main__':
+    try:
+        with Timer() as timer:
+            triplet, product = Prob9()
+            operation = str(product) + ' = ' + " x ".join([str(n) for n in triplet])
+            print 'Answer:', operation
+    finally:
+        print 'Time: %.5fs' % timer.Interval
+

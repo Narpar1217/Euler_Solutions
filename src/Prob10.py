@@ -10,8 +10,14 @@ Author: Adam Beagle
 """
 
 from math import sqrt
+from Timer import Timer
 
 ################################################################################
+def Prob10():
+    primes = SieveOfEratosthenes(2000000)
+    return sum(primes)
+
+#-----------------------------------------------------------------------------
 def SieveOfEratosthenes(limit):
     """Returns list of primes <= limit, in increasing order."""
     sieve = [True] * (limit + 1)
@@ -31,6 +37,11 @@ def SieveOfEratosthenes(limit):
     return [index for index,value in enumerate(sieve) if index >= 2 and value]
 
 ################################################################################
-
-primes = SieveOfEratosthenes(2000000)
-print 'Answer:', sum(primes)
+if __name__ == '__main__':
+    try:
+        with Timer() as timer:
+            print 'Answer: ' + str(Prob10())
+    finally:
+        print 'Time: %.5fs' % timer.Interval
+        
+    

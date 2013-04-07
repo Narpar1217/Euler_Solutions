@@ -13,16 +13,31 @@ exceed four million, find the sum of the even-valued terms.
 Author: Adam Beagle
 """
 
-fibs = [1, 1]
-ans = 0
-limit = 4000000
+from Timer import Timer
 
-while fibs[1] < limit:
-    nxt = sum(fibs)
-    fibs[0] = fibs[1]
-    fibs[1] = nxt
+################################################################################
+def Prob2():
+    fibs = [1, 1]
+    ans = 0
+    limit = 4000000
 
-    if fibs[1] % 2 == 0:
-        ans += fibs[1]
+    while fibs[1] < limit:
+        nxt = sum(fibs)
+        fibs[0] = fibs[1]
+        fibs[1] = nxt
 
-print 'Answer:', ans
+        if fibs[1] % 2 == 0:
+            ans += fibs[1]
+
+    return ans
+
+################################################################################
+if __name__ == '__main__':
+    try:
+        with Timer() as timer:
+            print 'Answer: ' + str(Prob2())
+    finally:
+        print 'Time: %.5fs' % timer.Interval
+		
+		
+
