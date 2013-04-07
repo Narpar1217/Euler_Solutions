@@ -13,7 +13,7 @@ from math import sqrt, log
 
 ################################################################################
 def SieveOfEratosthenes(limit):
-    """Returns list of primes <= limit"""
+    """Returns list of primes <= limit, in increasing order."""
     sieve = [True] * (limit + 1)
     i = 2
     
