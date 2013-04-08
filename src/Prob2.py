@@ -16,20 +16,17 @@ Author: Adam Beagle
 from Timer import Timer
 
 ################################################################################
+def FibGen(stop):
+    """Generator. Returns fibonacci numbers <= stop."""
+    a = b = 1
+    while b <= stop:
+        yield b
+        a, b = b, a + b
+
+#-----------------------------------------------------------------------------
 def Prob2():
-    fibs = [1, 1]
-    ans = 0
     limit = 4000000
-
-    while fibs[1] < limit:
-        nxt = sum(fibs)
-        fibs[0] = fibs[1]
-        fibs[1] = nxt
-
-        if fibs[1] % 2 == 0:
-            ans += fibs[1]
-
-    return ans
+    return sum((n for n in FibGen(limit) if n % 2 == 0))
 
 ################################################################################
 if __name__ == '__main__':
