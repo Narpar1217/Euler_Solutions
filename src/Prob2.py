@@ -10,20 +10,14 @@ previous two terms. By starting with 1 and 2, the first 10 terms will be:
 By considering the terms in the Fibonacci sequence whose values do not
 exceed four million, find the sum of the even-valued terms.
 
+
 Author: Adam Beagle
 """
 
+from EulerUtility import FibGen
 from Timer import Timer
 
 ################################################################################
-def FibGen(stop):
-    """Generator. Returns fibonacci numbers <= stop."""
-    a = b = 1
-    while b <= stop:
-        yield b
-        a, b = b, a + b
-
-#-----------------------------------------------------------------------------
 def Prob2():
     limit = 4000000
     return sum((n for n in FibGen(limit) if n % 2 == 0))

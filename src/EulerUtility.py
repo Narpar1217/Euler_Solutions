@@ -1,18 +1,46 @@
 """
 EulerUtility.py
+Author: Adam Beagle
 
 This file contains any functions that are used by
 multiple Project Euler solutions.
-
-Author: Adam Beagle
 """
 
 #-----------------------------------------------------------------------------
+def FibGen(limit = -1):
+    """
+    Generator. If limit supplied, returns fibonacci numbers <= limit.
+    If limit omitted, will run continuously until stopped elsewhere.
+    """
+    a = b = 1
+    
+    if limit >= 0:
+        while b <= limit:
+            yield b
+            a, b = b, a + b
+    else:
+        while True:
+            yield b
+            a, b = b, a + b
+            
+#-----------------------------------------------------------------------------
+def GetDigits(n):
+    """Generator. Yields each digit of an integer n, right to left."""
+    a = n
+    while a > 0:
+        yield a % 10
+        
+        if a > 1:
+            a /= 10
+        else:
+            a = 0
+            
+#-----------------------------------------------------------------------------
 def GetPrimeFactorization(n, primes):
     """
-    Returns a list of 2-tuples representing the prime factorization of n,
+    Returns a list representing the prime factorization of n,
     or an empty list if factorization fails.
-    Tuples are of form (prime, exponent).
+    Ex: Input 360, output [2, 2, 2, 3, 3, 5]; 2**3 x 3**2 x 5 = 360
     Factorization will fail if any prime factor of n is larger than the largest value in primes.
     Primes must be in increasing order.
     """

@@ -1,29 +1,26 @@
 """
 PROJECT EULER
-Problem 16
+Problem 20
 
-2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
-What is the sum of the digits of the number 2^1000?
+Find the sum of the digits in the number 100! (100 factorial).
+
 
 Author: Adam Beagle
 """
 
 from EulerUtility import GetDigits
+from math import factorial
 from Timer import Timer
 
 ################################################################################
-def Prob16():
-    n = 2**1000
-    return sum(GetDigits(n))
-    
+def Prob20():
+    return sum(GetDigits(factorial(100)))
+
 
 ################################################################################
 if __name__ == '__main__':
     try:
         with Timer() as timer:
-            print 'Answer: ' + str(Prob16())
+            print 'Answer: ' + str(Prob20())
     finally:
         print 'Time: %.5fs' % timer.Interval
-		
-		
-
