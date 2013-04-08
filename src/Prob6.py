@@ -12,7 +12,7 @@ from Timer import Timer
 
 ################################################################################
 def Prob6():
-    sumOfSquares = sum([n**2 for n in xrange(1, 101)])
+    sumOfSquares = sum((n**2 for n in xrange(1, 101)))
     squareOfSum = sum(xrange(1, 101))**2
 
     return squareOfSum - sumOfSquares

@@ -9,49 +9,33 @@ What is the 10,001st prime number?
 
 Author: Adam Beagle
 """
-from math import sqrt, log
+
+from math import log
+from EulerUtility import SieveOfEratosthenes
 from Timer import Timer
 
 ################################################################################
 def Prob7():
-    desiredPrime = 10001
-    upperLimit = 10**4  #arbitary starting point
+    desiredPrime = 10001 #Ex: desiredPrime = 20 means 20th prime # desired
+    upperLimit = 10**4   #Arbitrary starting point. Accuracy improved below.
     limitMult = 5
+    primes = []
 
     #Number of primes below a given n is approximately n / ln n
     #The above fact is used to approximate a suitable upper limit for the sieve.
     while (upperLimit / log(upperLimit)) <= desiredPrime:
         upperLimit *= limitMult
 
-    primes = SieveOfEratosthenes(upperLimit)
-
     #If approximated upper limit was insufficient, ask user if reattempt desired.
     while len(primes) < desiredPrime:
-        print 'WARNING: upperLimit too low. %d primes found below %d.' % (len(primes), upperLimit)
-        print 'Reattempting with upperLimit * %d\n' % limitMult
-        upperLimit *= limitMult
+        if len(primes) > 0:
+            print 'WARNING: upperLimit too low. %d primes found below %d.' % (len(primes), upperLimit)
+            print 'Reattempting with upperLimit * %d\n' % limitMult
+            
         primes = SieveOfEratosthenes(upperLimit)
+        upperLimit *= limitMult
         
     return primes[desiredPrime - 1]
-
-#-----------------------------------------------------------------------------
-def SieveOfEratosthenes(limit):
-    """Returns list of primes <= limit, in increasing order."""
-    sieve = [True] * (limit + 1)
-    i = 2
-    
-    while i < sqrt(limit):
-        if sieve[i]:
-            m = 0
-            j = i**2
-            while j <= limit:
-                sieve[j] = False
-                m += 1
-                j = (i**2) + (m*i)
-                
-        i += 1
-
-    return [index for index,value in enumerate(sieve) if index >= 2 and value]
 
             
 ################################################################################

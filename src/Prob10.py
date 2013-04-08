@@ -10,31 +10,13 @@ Author: Adam Beagle
 """
 
 from math import sqrt
+from EulerUtility import SieveOfEratosthenes
 from Timer import Timer
 
 ################################################################################
 def Prob10():
-    primes = SieveOfEratosthenes(2000000)
-    return sum(primes)
+    return sum(SieveOfEratosthenes(2000000, generator=True))
 
-#-----------------------------------------------------------------------------
-def SieveOfEratosthenes(limit):
-    """Returns list of primes <= limit, in increasing order."""
-    sieve = [True] * (limit + 1)
-    i = 2
-    
-    while i < sqrt(limit):
-        if sieve[i]:
-            m = 0
-            j = i**2
-            while j <= limit:
-                sieve[j] = False
-                m += 1
-                j = (i**2) + (m*i)
-                
-        i += 1
-
-    return [index for index,value in enumerate(sieve) if index >= 2 and value]
 
 ################################################################################
 if __name__ == '__main__':

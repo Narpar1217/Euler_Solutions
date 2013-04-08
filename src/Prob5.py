@@ -31,6 +31,7 @@ def CheckDivisibleByAll(n, start, stop):
     return True
 
 #-----------------------------------------------------------------------------
+#FIXME: Currently returns answer in ~4 seconds. Lots of optimization still to be found.
 def Prob5():
     n = 20*19
 

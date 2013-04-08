@@ -27,6 +27,7 @@ Author: Adam Beagle
 
 from math import sqrt
 from Timer import Timer
+from EulerUtility import GetPrimeFactorization, SieveOfEratosthenes
 
 ################################################################################
 def Counts(lst):
@@ -53,6 +54,10 @@ def GetNumDivisors(n, primes):
     #where a, b, c, etc. are prime and x, y, z, etc. are > 0,
     #num divisors in n = (x + 1)*(y + 1)*(z + 1)*...
     primeFactors = GetPrimeFactorization(n, primes)
+
+    if not primeFactors:
+        print "WARNING: Prime factorization for %d could not be determined.\nA longer 'primes' is required (Current maximum %d).\n" % (n, primes[-1])
+    
     exponentialForm = Counts(primeFactors)
     numDivisors = 1
 
@@ -61,35 +66,6 @@ def GetNumDivisors(n, primes):
 
     return numDivisors
 
-#-----------------------------------------------------------------------------
-def GetPrimeFactorization(n, primes):
-    """
-    Returns a list of 2-tuples representing the prime factorization of n,
-    or an empty list if factorization not successful.
-    Tuples are of form (prime, exponent)
-    Factorization will only fail if a prime factor of n is larger
-    than the largest value in primes.
-    Primes must be in increasing order.
-    """
-    factors = []
-
-    if n in primes:
-        return [n]
-    
-    for p in primes:
-        if p > (n / 2):
-          break
-        
-        if n % p == 0:
-            factors.append(p)
-            factors += GetPrimeFactorization(n / p, primes)
-            break
-
-    prod = 1
-    for f in factors:
-        prod *= f
-
-    return factors if prod == n else []
 
 #-----------------------------------------------------------------------------
 def GetTriNum(n):
@@ -104,7 +80,8 @@ def Prob12():
                      #From http://wwwhomes.uni-bielefeld.de/achim/highly.txt
 
     #Generate reasonable amount of primes
-    primes = SieveOfEratosthenes(int(sqrt(10*_min)))
+    #Limit is fairly arbitrary. Warnings will be printed in GetNumDivisors if limit is insufficient.
+    primes = SieveOfEratosthenes(10*int(sqrt(_min)))
                           
     #Find first triangle number >= _min
     while triNum <= _min:
@@ -124,24 +101,6 @@ def Prob12():
 
     return triNum
 
-#-----------------------------------------------------------------------------
-def SieveOfEratosthenes(limit):
-    """Returns list of primes <= limit, in increasing order."""
-    sieve = [True] * (limit + 1)
-    i = 2
-    
-    while i < sqrt(limit):
-        if sieve[i]:
-            m = 0
-            j = i**2
-            while j <= limit:
-                sieve[j] = False
-                m += 1
-                j = (i**2) + (m*i)
-                
-        i += 1
-
-    return [index for index,value in enumerate(sieve) if index >= 2 and value]
 
 ################################################################################
 if __name__ == '__main__':
