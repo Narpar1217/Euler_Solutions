@@ -27,24 +27,9 @@ Author: Adam Beagle
 
 from math import sqrt
 from Timer import Timer
-from EulerUtility import GetPrimeFactorization, SieveOfEratosthenes
+from EulerUtility import GetPrimeFactorization, SieveOfEratosthenes, UniqueCounts
 
 ################################################################################
-def Counts(lst):
-    """
-    Returns list of 2-tuples of elements, and how many times they appear in lst.
-    Example: Input [3, 3, 2, 2, 2, 4] Output [(2, 3), (3, 2), (4, 1)]
-    """
-    counts = []
-    
-    unique = list(set(lst))
-
-    for el in unique:
-        counts.append((el, lst.count(el)))
-
-    return sorted(counts)
-    
-#-----------------------------------------------------------------------------
 def GetNumDivisors(n, primes):
     """
     Returns number of divisor in n.
@@ -58,7 +43,7 @@ def GetNumDivisors(n, primes):
     if not primeFactors:
         print "WARNING: Prime factorization for %d could not be determined.\nA longer 'primes' is required (Current maximum %d).\n" % (n, primes[-1])
     
-    exponentialForm = Counts(primeFactors)
+    exponentialForm = UniqueCounts(primeFactors)
     numDivisors = 1
 
     for factor in exponentialForm:

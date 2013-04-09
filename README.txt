@@ -10,10 +10,10 @@ The goal is to write a program for each problem, in any language,
 that solves it in less than one minute. 
 More info about Project Euler is available at http://projecteuler.net
 
-My personal goal is to solve each problem in at most 5 seconds, 
-but preferably in under 1 second.
-(Of the solutions available in this repo, only those of problems 
-5 and 10 take longer than 1 second on my machine).
+My personal goal is to solve each problem completely, 
+i.e. with a solution being at minimum extremely highly probable, but 
+ideally guaranteed, in under 1 second. Of the solutions available in this repo, 
+only that of problem 10 currently does not meet this goal (on my machine).
 
 As of 4/6/2013 I have solved 40 out of 421 problems, mostly in Python.
 More solutions will be added here as they are reviewed, and as time permits.

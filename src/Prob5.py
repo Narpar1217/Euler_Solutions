@@ -12,35 +12,45 @@ divisible by all of the numbers from 1 to 20?
 Author: Adam Beagle
 """
 
+from EulerUtility import GetPrimeFactorization, UniqueCounts
 from Timer import Timer
 
 ################################################################################
-def CheckDivisibleByAll(n, start, stop):
-    """
-    Returns true if an integer n is evenly divisible by
-    all integers in range start - stop, inclusive.
-    Assumes start > stop.
-    """
-    
-    while stop >= start:
-        if not n % stop == 0:
-            return False
-        
-        stop -= 1
 
-    return True
+#Finding LCM of set of numbers:
+    #  Find prime factorization for each number
+    #  The LCM is the product of the highest powers of each prime from the factorizations
+def LCMOfSet(nums, primes):
+    """
+    Returns the least common multiple of sequence of ints nums.
+    Primes must be list of primes <= max(nums), in increasing order.
+    """
+    maxPrimeOccurences = {} #Keys, values will be a prime, and its highest
+                            #power found in a prime factorization of a number
+                            #in nums, respectively.
+
+    #Fill maxPrimeOccurences
+    for n in nums:
+        pFacs = GetPrimeFactorization(n, primes)
+
+        for factor, count in UniqueCounts(pFacs):
+            if factor in maxPrimeOccurences:
+                maxPrimeOccurences[factor] = max(maxPrimeOccurences[factor], count)
+            else:
+                maxPrimeOccurences[factor] = count
+
+    #Compute LCM
+    lcm = 1
+    for prime, exp in maxPrimeOccurences.items():
+        lcm *= prime ** exp
+
+    return lcm
 
 #-----------------------------------------------------------------------------
-#FIXME: Currently returns answer in ~4 seconds. Lots of optimization still to be found.
 def Prob5():
-    n = 20*19
-
-    #Don't need to check 1-10; Will be covered with range 11-19.
-    #Also don't need to check 20, as only multiples of 20 being tested.
-    while not CheckDivisibleByAll(n, 11, 19):
-        n += 20                                         
-
-    return n
+    primes = [2, 3, 5, 7, 11, 13, 17, 19]
+       
+    return LCMOfSet(range(1, 21), primes)
 
 ################################################################################
 if __name__ == '__main__':

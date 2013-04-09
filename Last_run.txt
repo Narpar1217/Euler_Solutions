@@ -2,7 +2,7 @@
 PROJECT EULER -- Batch Run 
  
 2013-04-09 
-02:59:40 
+11:41:41 
 *************************** 
  
 Problem 1 
@@ -20,19 +20,19 @@ Time:   0.00002s
 Problem 3 
 ---------------- 
 Answer: 6857
-Time:   0.00724s
+Time:   0.00722s
  
  
 Problem 4 
 ---------------- 
 Answer: 906609
-Time:   0.01256s
+Time:   0.01238s
  
  
 Problem 5 
 ---------------- 
 Answer: 232792560
-Time:   4.25596s
+Time:   0.00015s
  
  
 Problem 6 
@@ -44,55 +44,55 @@ Time:   0.00004s
 Problem 7 
 ---------------- 
 Answer: 104743
-Time:   0.18936s
+Time:   0.19018s
  
  
 Problem 8 
 ---------------- 
 Answer: 40824 = 9 x 9 x 8 x 7 x 9
-Time:   0.00553s
+Time:   0.01423s
  
  
 Problem 9 
 ---------------- 
 Answer: 31875000 = 200 x 375 x 425
-Time:   0.40678s
+Time:   0.40420s
  
  
 Problem 10 
 ---------------- 
 Answer: 142913828922
-Time:   1.65838s
+Time:   1.67757s
  
  
 Problem 11 
 ---------------- 
 Answer: 70600674 = 89 x 94 x 97 x 87
-Time:   0.00225s
+Time:   0.02862s
  
  
 Problem 12 
 ---------------- 
 Answer: 76576500
-Time:   0.65737s
+Time:   0.65579s
  
  
 Problem 13 
 ---------------- 
 Answer: 5537376230
-Time:   0.00038s
+Time:   0.00858s
  
  
 Problem 15 
 ---------------- 
 Answer: 137846528820
-Time:   0.24018s
+Time:   0.24124s
  
  
 Problem 16 
 ---------------- 
 Answer: 1366
-Time:   0.00050s
+Time:   0.00052s
  
  
 Problem 17 
@@ -104,13 +104,13 @@ Time:   0.00199s
 Problem 18 
 ---------------- 
 Answer: 1074
-Time:   0.01759s
+Time:   0.01913s
  
  
 Problem 19 
 ---------------- 
 Answer: 171
-Time:   0.00079s
+Time:   0.00078s
  
  
 Problem 20 
@@ -122,7 +122,7 @@ Time:   0.00022s
 Problem 21 
 ---------------- 
 Answer: 31626
-Time:   0.12063s
+Time:   0.12080s
  
  
 Problem 25 
@@ -134,18 +134,18 @@ Time:   0.00454s
 Problem 27 
 ---------------- 
 Answer: -59231 (a: -61, b: 971, primes: 71)
-Time:   0.66133s
+Time:   0.65996s
  
  
 Problem 48 
 ---------------- 
 Answer: 9110846700
-Time:   0.08624s
+Time:   0.08605s
  
  
 Problem 89 
 ---------------- 
 Answer: 743
-Time:   0.01321s
+Time:   0.01577s
  
  

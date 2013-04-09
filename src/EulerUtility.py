@@ -22,6 +22,7 @@ def FibGen(limit = -1):
         while True:
             yield b
             a, b = b, a + b
+
             
 #-----------------------------------------------------------------------------
 def GetDigits(n):
@@ -32,6 +33,7 @@ def GetDigits(n):
     while n > 0:
         yield n % 10
         n /= 10
+
             
 #-----------------------------------------------------------------------------
 def GetPrimeFactorization(n, primes):
@@ -62,6 +64,7 @@ def GetPrimeFactorization(n, primes):
 
     return factors if prod == n else []
 
+
 #-----------------------------------------------------------------------------
 def SieveOfEratosthenes(limit, generator=False):
     """
@@ -88,3 +91,19 @@ def SieveOfEratosthenes(limit, generator=False):
         return (index for index,value in enumerate(sieve) if index >= 2 and value)
     else:
         return [index for index,value in enumerate(sieve) if index >= 2 and value]
+
+
+#-----------------------------------------------------------------------------
+def UniqueCounts(sequence):
+    """
+    Returns list of 2-tuples of elements, and how many times they appear in lst.
+    Example: Input [3, 3, 2, 2, 2, 4] Output [(2, 3), (3, 2), (4, 1)]
+    """
+    counts = []
+    
+    unique = list(set(sequence))
+
+    for el in unique:
+        counts.append((el, sequence.count(el)))
+
+    return sorted(counts)
