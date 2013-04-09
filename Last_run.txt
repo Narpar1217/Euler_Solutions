@@ -1,8 +1,8 @@
 *************************** 
 PROJECT EULER -- Batch Run 
  
-2013-04-08 
-22:04:34 
+2013-04-09 
+02:59:40 
 *************************** 
  
 Problem 1 
@@ -20,19 +20,19 @@ Time:   0.00002s
 Problem 3 
 ---------------- 
 Answer: 6857
-Time:   0.00728s
+Time:   0.00724s
  
  
 Problem 4 
 ---------------- 
 Answer: 906609
-Time:   0.01242s
+Time:   0.01256s
  
  
 Problem 5 
 ---------------- 
 Answer: 232792560
-Time:   4.25736s
+Time:   4.25596s
  
  
 Problem 6 
@@ -44,37 +44,37 @@ Time:   0.00004s
 Problem 7 
 ---------------- 
 Answer: 104743
-Time:   0.19365s
+Time:   0.18936s
  
  
 Problem 8 
 ---------------- 
 Answer: 40824 = 9 x 9 x 8 x 7 x 9
-Time:   0.00564s
+Time:   0.00553s
  
  
 Problem 9 
 ---------------- 
 Answer: 31875000 = 200 x 375 x 425
-Time:   0.40563s
+Time:   0.40678s
  
  
 Problem 10 
 ---------------- 
 Answer: 142913828922
-Time:   1.68423s
+Time:   1.65838s
  
  
 Problem 11 
 ---------------- 
 Answer: 70600674 = 89 x 94 x 97 x 87
-Time:   0.00227s
+Time:   0.00225s
  
  
 Problem 12 
 ---------------- 
 Answer: 76576500
-Time:   0.65774s
+Time:   0.65737s
  
  
 Problem 13 
@@ -86,48 +86,66 @@ Time:   0.00038s
 Problem 15 
 ---------------- 
 Answer: 137846528820
-Time:   0.24162s
+Time:   0.24018s
  
  
 Problem 16 
 ---------------- 
 Answer: 1366
-Time:   0.00054s
+Time:   0.00050s
  
  
 Problem 17 
 ---------------- 
 Answer: 21124
-Time:   0.00197s
+Time:   0.00199s
  
  
 Problem 18 
 ---------------- 
 Answer: 1074
-Time:   0.01754s
+Time:   0.01759s
  
  
 Problem 19 
 ---------------- 
 Answer: 171
-Time:   0.00073s
+Time:   0.00079s
  
  
 Problem 20 
 ---------------- 
 Answer: 648
-Time:   0.00024s
+Time:   0.00022s
  
  
 Problem 21 
 ---------------- 
 Answer: 31626
-Time:   0.12011s
+Time:   0.12063s
  
  
 Problem 25 
 ---------------- 
 Answer: 4780
-Time:   0.00453s
+Time:   0.00454s
+ 
+ 
+Problem 27 
+---------------- 
+Answer: -59231 (a: -61, b: 971, primes: 71)
+Time:   0.66133s
+ 
+ 
+Problem 48 
+---------------- 
+Answer: 9110846700
+Time:   0.08624s
+ 
+ 
+Problem 89 
+---------------- 
+Answer: 743
+Time:   0.01321s
  
  
