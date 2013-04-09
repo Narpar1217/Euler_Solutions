@@ -26,14 +26,12 @@ def FibGen(limit = -1):
 #-----------------------------------------------------------------------------
 def GetDigits(n):
     """Generator. Yields each digit of an integer n, right to left."""
-    a = n
-    while a > 0:
-        yield a % 10
-        
-        if a > 1:
-            a /= 10
-        else:
-            a = 0
+    if n == 0:
+        yield 0
+
+    while n > 0:
+        yield n % 10
+        n /= 10
             
 #-----------------------------------------------------------------------------
 def GetPrimeFactorization(n, primes):
