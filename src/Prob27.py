@@ -62,7 +62,7 @@ def TestQuadratic(a, b, primes):
 
     for n in QuadraticGen(a, b, 0):
         if n > maxPrime:
-            raise ValueError("Exceeded max prime with a = %d, b = %d" % (a, b))
+            raise ValueError("Exceeded max prime with a: %d, b: %d, n: %d" % (a, b, n))
         
         if n in primes:
             chainLen += 1
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     try:
         with Timer() as timer:
             _len, a, b = Prob27()
-            print 'Answer: ' + str(a*b) + ' (a: %d, b: %d, primes: %d)' % (a, b, _len)
+            print 'Answer: ' + '%d (a: %d, b: %d, primes: %d)' % (a*b, a, b, _len)
     finally:
         print 'Time:   %.5fs' % timer.Interval
 		
