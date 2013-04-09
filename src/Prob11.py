@@ -106,9 +106,9 @@ if __name__ == '__main__':
     
     try:
         with Timer() as timer:
-            filename = path.join('..', 'res', 'grid.txt')
+            filename = path.join('..', 'res', 'Prob11_grid.txt')
             product, factors = Prob11(filename)
             operation = str(product) + ' = ' + " x ".join([str(n) for n in factors])
             print 'Answer:', operation
     finally:
-        print 'Time: %.5fs' % timer.Interval
+        print 'Time:   %.5fs' % timer.Interval

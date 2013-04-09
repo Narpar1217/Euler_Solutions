@@ -46,10 +46,10 @@ def ListProduct(nums):
 if __name__ == '__main__':
     try:
         with Timer() as timer:
-            fName = path.join('..', 'res', 'bignum.txt')
+            fName = path.join('..', 'res', 'Prob8_bignum.txt')
             factors, product = Prob8(fName)
             operation = str(product) + ' = ' + " x ".join([str(n) for n in factors])
             print 'Answer:', operation
     finally:
-        print 'Time: %.5fs' % timer.Interval
+        print 'Time:   %.5fs' % timer.Interval
 

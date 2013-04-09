@@ -27,4 +27,4 @@ if __name__ == '__main__':
             filename = path.join('..', 'res', 'Prob13_largeNums.txt')
             print 'Answer: ' + str(Prob13(filename))
     finally:
-        print 'Time: %.5fs' % timer.Interval
+        print 'Time:   %.5fs' % timer.Interval

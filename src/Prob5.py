@@ -48,5 +48,5 @@ if __name__ == '__main__':
         with Timer() as timer:
             print 'Answer: ' + str(Prob5())
     finally:
-        print 'Time: %.5fs' % timer.Interval
+        print 'Time:   %.5fs' % timer.Interval
 

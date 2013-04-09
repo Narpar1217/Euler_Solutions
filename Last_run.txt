@@ -1,0 +1,133 @@
+*************************** 
+PROJECT EULER -- Batch Run 
+ 
+2013-04-08 
+22:04:34 
+*************************** 
+ 
+Problem 1 
+---------------- 
+Answer: 233168
+Time:   0.00019s
+ 
+ 
+Problem 2 
+---------------- 
+Answer: 4613732
+Time:   0.00002s
+ 
+ 
+Problem 3 
+---------------- 
+Answer: 6857
+Time:   0.00728s
+ 
+ 
+Problem 4 
+---------------- 
+Answer: 906609
+Time:   0.01242s
+ 
+ 
+Problem 5 
+---------------- 
+Answer: 232792560
+Time:   4.25736s
+ 
+ 
+Problem 6 
+---------------- 
+Answer: 25164150
+Time:   0.00004s
+ 
+ 
+Problem 7 
+---------------- 
+Answer: 104743
+Time:   0.19365s
+ 
+ 
+Problem 8 
+---------------- 
+Answer: 40824 = 9 x 9 x 8 x 7 x 9
+Time:   0.00564s
+ 
+ 
+Problem 9 
+---------------- 
+Answer: 31875000 = 200 x 375 x 425
+Time:   0.40563s
+ 
+ 
+Problem 10 
+---------------- 
+Answer: 142913828922
+Time:   1.68423s
+ 
+ 
+Problem 11 
+---------------- 
+Answer: 70600674 = 89 x 94 x 97 x 87
+Time:   0.00227s
+ 
+ 
+Problem 12 
+---------------- 
+Answer: 76576500
+Time:   0.65774s
+ 
+ 
+Problem 13 
+---------------- 
+Answer: 5537376230
+Time:   0.00038s
+ 
+ 
+Problem 15 
+---------------- 
+Answer: 137846528820
+Time:   0.24162s
+ 
+ 
+Problem 16 
+---------------- 
+Answer: 1366
+Time:   0.00054s
+ 
+ 
+Problem 17 
+---------------- 
+Answer: 21124
+Time:   0.00197s
+ 
+ 
+Problem 18 
+---------------- 
+Answer: 1074
+Time:   0.01754s
+ 
+ 
+Problem 19 
+---------------- 
+Answer: 171
+Time:   0.00073s
+ 
+ 
+Problem 20 
+---------------- 
+Answer: 648
+Time:   0.00024s
+ 
+ 
+Problem 21 
+---------------- 
+Answer: 31626
+Time:   0.12011s
+ 
+ 
+Problem 25 
+---------------- 
+Answer: 4780
+Time:   0.00453s
+ 
+ 

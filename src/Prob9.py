@@ -47,5 +47,5 @@ if __name__ == '__main__':
             operation = str(product) + ' = ' + " x ".join([str(n) for n in triplet])
             print 'Answer:', operation
     finally:
-        print 'Time: %.5fs' % timer.Interval
+        print 'Time:   %.5fs' % timer.Interval
 

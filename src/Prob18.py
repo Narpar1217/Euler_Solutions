@@ -47,4 +47,4 @@ if __name__ == '__main__':
             filename = path.join('..', 'res', 'Prob18_triangle.txt')
             print 'Answer: ' + str(Prob18(filename))
     finally:
-        print 'Time: %.5fs' % timer.Interval
+        print 'Time:   %.5fs' % timer.Interval
