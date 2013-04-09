@@ -94,7 +94,7 @@ if __name__ == '__main__':
     try:
         with Timer() as timer:
             _len, a, b = Prob27()
-            print 'Answer: ' + '%d (a: %d, b: %d, primes: %d)' % (a*b, a, b, _len)
+            print 'Answer: %d (a: %d, b: %d, primes: %d)' % (a*b, a, b, _len)
     finally:
         print 'Time:   %.5fs' % timer.Interval
 		
