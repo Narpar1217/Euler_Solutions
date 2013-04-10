@@ -20,11 +20,18 @@ from math import factorial
 from Timer import Timer
 
 ################################################################################
-#There are n! permutations of a sequence (seq) of n elements.
-#Therefore, there are (n - 1)! permutations of seq given
-#a particular starting element. This fact is used recursively
-#to get every "first" element until seq is empty, and the nth
-#permutation has been found.
+# There are x! permutations of a sequence, seq, containing x elements.
+# Therefore, if a particular starting element is chosen from seq, (x-1)!
+# permutations exist of seq that begin with that element.
+#
+# Given a seq sorted in increasing order and an index i,
+# the term of the lexicographically "highest" permutation with
+# seq[i] as its first digit is given by i*(n - 1)!.
+#
+# This function uses the above fact recursively to get
+# the "first" elements of an ever-smaller seq, until
+# seq is empty and the nth lexicographic permutation
+# has been found.
 def NthLexicographicPerm(seq, n, perm=[], permN=0):
     """
     Returns a string representation of the nth lexicographic
