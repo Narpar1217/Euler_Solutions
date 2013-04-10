@@ -2,7 +2,7 @@
 PROJECT EULER -- Batch Run 
  
 2013-04-09 
-17:36:13 
+21:56:21 
 *************************** 
  
 Problem 1 
@@ -20,13 +20,13 @@ Time:   0.00002s
 Problem 3 
 ---------------- 
 Answer: 6857
-Time:   0.00724s
+Time:   0.00726s
  
  
 Problem 4 
 ---------------- 
 Answer: 906609
-Time:   0.01243s
+Time:   0.01236s
  
  
 Problem 5 
@@ -44,37 +44,37 @@ Time:   0.00004s
 Problem 7 
 ---------------- 
 Answer: 104743
-Time:   0.19002s
+Time:   0.18876s
  
  
 Problem 8 
 ---------------- 
 Answer: 40824 = 9 x 9 x 8 x 7 x 9
-Time:   0.00563s
+Time:   0.00570s
  
  
 Problem 9 
 ---------------- 
 Answer: 31875000 = 200 x 375 x 425
-Time:   0.40398s
+Time:   0.40458s
  
  
 Problem 10 
 ---------------- 
 Answer: 142913828922
-Time:   1.65873s
+Time:   1.67724s
  
  
 Problem 11 
 ---------------- 
 Answer: 70600674 = 89 x 94 x 97 x 87
-Time:   0.00226s
+Time:   0.00227s
  
  
 Problem 12 
 ---------------- 
 Answer: 76576500
-Time:   0.65479s
+Time:   0.65400s
  
  
 Problem 13 
@@ -83,10 +83,16 @@ Answer: 5537376230
 Time:   0.00037s
  
  
+Problem 14 
+---------------- 
+Answer: 837799 (length 524)
+Time:   2.18128s
+ 
+ 
 Problem 15 
 ---------------- 
 Answer: 137846528820
-Time:   0.23950s
+Time:   0.23745s
  
  
 Problem 16 
@@ -98,19 +104,19 @@ Time:   0.00051s
 Problem 17 
 ---------------- 
 Answer: 21124
-Time:   0.00194s
+Time:   0.00193s
  
  
 Problem 18 
 ---------------- 
 Answer: 1074
-Time:   0.01779s
+Time:   0.01744s
  
  
 Problem 19 
 ---------------- 
 Answer: 171
-Time:   0.00076s
+Time:   0.00072s
  
  
 Problem 20 
@@ -122,48 +128,48 @@ Time:   0.00022s
 Problem 21 
 ---------------- 
 Answer: 31626
-Time:   0.12043s
+Time:   0.12049s
  
  
 Problem 25 
 ---------------- 
 Answer: 4780
-Time:   0.00460s
+Time:   0.00456s
  
  
 Problem 27 
 ---------------- 
 Answer: -59231 (a: -61, b: 971, primes: 71)
-Time:   0.66242s
+Time:   0.66149s
  
  
 Problem 35 
 ---------------- 
 Answer: 55
-Time:   0.97596s
+Time:   0.97318s
  
  
 Problem 42 
 ---------------- 
 Answer: 162
-Time:   0.00789s
+Time:   0.00784s
  
  
 Problem 48 
 ---------------- 
 Answer: 9110846700
-Time:   0.08593s
+Time:   0.08601s
  
  
 Problem 59 
 ---------------- 
 Answer: 107359 (Key: god)
-Time:   0.34538s
+Time:   0.35008s
  
  
 Problem 89 
 ---------------- 
 Answer: 743
-Time:   0.01318s
+Time:   0.01315s
  
  
