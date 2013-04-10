@@ -19,22 +19,11 @@ If the word value is a triangle number then we shall call the word a triangle wo
 Find the number of triangle words in ../res/Prob42_words.txt.
 """
 
+from EulerUtility import GetAlphaSum
 from os import path
 from Timer import Timer
 
 ################################################################################
-def GetAlphaSum(word):
-    """
-    Returns the alphabetical sum of all characters in a word.
-    Each character's value is its index in the alphabet
-    (A = 1, B = 2, ... , Z = 26)
-    """
-    word = word.upper()
-    asciiOffset = ord('A') - 1
-
-    return sum(ord(c) - asciiOffset for c in word)
-    
-#-----------------------------------------------------------------------------
 def GetTriangleNums(limit):
     """
     Generator. Yields tuple of triangle numbers < limit,
