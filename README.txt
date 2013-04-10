@@ -12,8 +12,8 @@ More info about Project Euler is available at http://projecteuler.net
 
 My personal goal is to solve each problem completely, 
 i.e. with a solution being at minimum extremely highly probable, but 
-ideally guaranteed, in under 1 second. Of the solutions available in this repo, 
-only that of problem 10 currently does not meet this goal (on my machine).
+ideally guaranteed, in under 1 second. My progress toward this goal
+can be seen in Last_run.txt, contained in the same directory as this Readme.
 
 As of 4/6/2013 I have solved 40 out of 421 problems, mostly in Python.
 More solutions will be added here as they are reviewed, and as time permits.
