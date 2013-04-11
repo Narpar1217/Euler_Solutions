@@ -1,8 +1,8 @@
 *************************** 
 PROJECT EULER -- Batch Run 
  
-2013-04-10 
-01:31:49 
+2013-04-11 
+02:50:02 
 *************************** 
  
 Problem 1 
@@ -14,25 +14,25 @@ Time:   0.00019s
 Problem 2 
 ---------------- 
 Answer: 4613732
-Time:   0.00002s
+Time:   0.00003s
  
  
 Problem 3 
 ---------------- 
 Answer: 6857
-Time:   0.00720s
+Time:   0.00723s
  
  
 Problem 4 
 ---------------- 
 Answer: 906609
-Time:   0.01237s
+Time:   0.01234s
  
  
 Problem 5 
 ---------------- 
 Answer: 232792560
-Time:   0.00014s
+Time:   0.00015s
  
  
 Problem 6 
@@ -44,73 +44,73 @@ Time:   0.00004s
 Problem 7 
 ---------------- 
 Answer: 104743
-Time:   0.20873s
+Time:   0.20459s
  
  
 Problem 8 
 ---------------- 
 Answer: 40824 = 9 x 9 x 8 x 7 x 9
-Time:   0.00565s
+Time:   0.00569s
  
  
 Problem 9 
 ---------------- 
 Answer: 31875000 = 200 x 375 x 425
-Time:   0.40597s
+Time:   0.44832s
  
  
 Problem 10 
 ---------------- 
 Answer: 142913828922
-Time:   1.74151s
+Time:   1.85083s
  
  
 Problem 11 
 ---------------- 
 Answer: 70600674 = 89 x 94 x 97 x 87
-Time:   0.00226s
+Time:   0.00891s
  
  
 Problem 12 
 ---------------- 
 Answer: 76576500
-Time:   0.65490s
+Time:   0.71402s
  
  
 Problem 13 
 ---------------- 
 Answer: 5537376230
-Time:   0.00038s
+Time:   0.00039s
  
  
 Problem 14 
 ---------------- 
 Answer: 837799 (length 524)
-Time:   2.24656s
+Time:   2.45027s
  
  
 Problem 15 
 ---------------- 
 Answer: 137846528820
-Time:   0.23959s
+Time:   0.25736s
  
  
 Problem 16 
 ---------------- 
 Answer: 1366
-Time:   0.00050s
+Time:   0.00058s
  
  
 Problem 17 
 ---------------- 
 Answer: 21124
-Time:   0.00194s
+Time:   0.00205s
  
  
 Problem 18 
 ---------------- 
 Answer: 1074
-Time:   0.01770s
+Time:   0.01755s
  
  
 Problem 19 
@@ -122,66 +122,78 @@ Time:   0.00071s
 Problem 20 
 ---------------- 
 Answer: 648
-Time:   0.00022s
+Time:   0.00025s
  
  
 Problem 21 
 ---------------- 
 Answer: 31626
-Time:   0.12090s
+Time:   0.12248s
  
  
 Problem 22 
 ---------------- 
 Answer: 871198282
-Time:   0.01889s
+Time:   0.01929s
  
  
 Problem 24 
 ---------------- 
 Answer: 2783915460
-Time:   0.00004s
+Time:   0.00005s
  
  
 Problem 25 
 ---------------- 
 Answer: 4780
-Time:   0.00453s
+Time:   0.00457s
+ 
+ 
+Problem 26 
+---------------- 
+Answer: 983
+Time:   0.00960s
  
  
 Problem 27 
 ---------------- 
 Answer: -59231 (a: -61, b: 971, primes: 71)
-Time:   0.65787s
+Time:   0.71497s
+ 
+ 
+Problem 30 
+---------------- 
+Answer: 443839
+Time:   1.03594s
  
  
 Problem 35 
 ---------------- 
 Answer: 55
-Time:   0.99037s
+Time:   1.09364s
  
  
 Problem 42 
 ---------------- 
 Answer: 162
-Time:   0.00808s
+Time:   0.00795s
  
  
 Problem 48 
 ---------------- 
 Answer: 9110846700
-Time:   0.08603s
+Time:   0.08623s
  
  
 Problem 59 
 ---------------- 
 Answer: 107359 (Key: god)
-Time:   0.35022s
+Time:   0.36710s
  
  
 Problem 89 
 ---------------- 
 Answer: 743
-Time:   0.01317s
+Time:   0.01307s
  
  
