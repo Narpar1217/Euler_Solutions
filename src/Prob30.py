@@ -47,7 +47,8 @@ def Prob30():
     # Upper limit is 9**5 * p, where p is the n at which the largest
     # power sum of an n-digit number, 9**5 * n (the sum of n 9's
     # raised to the 5th power), is less than the smallest n+1-digit number.
-    # The power sum of any greater number will be < the number.
+    # The power sum of any greater number will be less than the number itself,
+    # thus any greater number cannot satisfy the solution condition.
     p = 2
     limit = 9**5 * p
     while limit > 10**p - 1:
