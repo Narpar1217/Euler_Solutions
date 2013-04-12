@@ -77,14 +77,22 @@ def GetPrimeFactorization(n, primes):
 
 
 #-----------------------------------------------------------------------------
-def SieveOfEratosthenes(limit, generator=False):
+def SieveOfEratosthenes(limit, generator=False, sieveForm=False):
     """
-    Returns list of primes <= limit, in increasing order.
-    If generator is set, primes returned as generator.
+    Default return value is list of primes <= limit, in increasing order.
+    If sieveForm is set, returns list wherein index n is True or False based on primality of n.
+    (sieveForm is more efficient when direct indexing is needed, and not all primes need to be iterated through).
+    If generator is set, primes returned as a generator.
+    NOTE: If sieveForm is set, generator is ignored.
     """
     from math import sqrt
+    from sys import stderr
+
+    if sieveForm and generator:
+        print >>stderr, 'WARNING: sieveForm and generator set to True on call to SieveOfEratosthenes. Generator will be ignored.'
     
     sieve = [True] * (limit + 1)
+    sieve[0] = sieve[1] =  False
     i = 2
     
     while i < sqrt(limit):
@@ -97,11 +105,15 @@ def SieveOfEratosthenes(limit, generator=False):
                 j = (i**2) + (m*i)
                 
         i += 1
-
-    if generator:
-        return (index for index,value in enumerate(sieve) if index >= 2 and value)
-    else:
-        return [index for index,value in enumerate(sieve) if index >= 2 and value]
+    
+    if sieveForm:
+        return sieve
+    
+    elif not sieveForm and generator:
+        return (index for index,value in enumerate(sieve) if value)
+    
+    elif not sieveForm and not generator:
+        return [index for index,value in enumerate(sieve) if value]
 
 
 #-----------------------------------------------------------------------------

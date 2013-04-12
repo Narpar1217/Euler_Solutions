@@ -15,8 +15,8 @@ from Timer import Timer
 
 ################################################################################
 def Prob10():
-    return sum(SieveOfEratosthenes(2000000, generator=True))
 
+    return sum(SieveOfEratosthenes((10**6)*2, generator=True))
 
 ################################################################################
 if __name__ == '__main__':
