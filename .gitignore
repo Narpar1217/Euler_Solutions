@@ -2,6 +2,8 @@
 ## CUSTOM
 #################
 src/*.bat
+src/working/
+res/Prob96*
 
 #################
 ## Eclipse
