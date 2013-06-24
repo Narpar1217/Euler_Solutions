@@ -15,7 +15,7 @@ i.e. with a solution being at minimum extremely highly probable, but
 ideally guaranteed, in under 1 second. My progress toward this goal
 can be seen in Last_run.txt, contained in the same directory as this Readme.
 
-As of 4/6/2013 I have solved 40 out of 421 problems, mostly in Python.
+As of 6/24/2013 I have solved 42 out of 421 problems, mostly in Python.
 More solutions will be added here as they are reviewed, and as time permits.
 
 

@@ -45,7 +45,6 @@ def GetDigits(n):
         yield n % 10
         n /= 10
 
-            
 #-----------------------------------------------------------------------------
 def GetPrimeFactorization(n, primes):
     """
@@ -75,6 +74,25 @@ def GetPrimeFactorization(n, primes):
 
     return factors if prod == n else []
 
+#-----------------------------------------------------------------------------
+def Multiples(i, stop, start=0):
+    """
+    Returns multiples of i less than stop,
+    beginning at the first multiple equal to
+    or exceeding start.
+    """
+
+    if i == 0:
+        yield 0
+    elif stop <= start:
+        raise ValueError("Value of 'stop' must exceed 'start'")
+    
+    if not start % i == 0:
+        start = i * (start / i + 1)
+
+    while start < stop:
+        yield start
+        start += i
 
 #-----------------------------------------------------------------------------
 def SieveOfEratosthenes(limit, generator=False, sieveForm=False):
