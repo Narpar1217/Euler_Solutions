@@ -1,8 +1,9 @@
 """
-Timer.py
+timer.py
 Author: Adam Beagle
 
 Inspired by http://preshing.com/20110924/timing-your-code-using-pythons-with-statement
+
 """
 
 import time
