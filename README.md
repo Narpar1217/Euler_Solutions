@@ -1,7 +1,5 @@
-
-**********************
-* ~~ GENERAL INFO ~~ *
-**********************
+GENERAL
+=======
 
 In this repository are my solutions to select problems from Project Euler.
 Project Euler "is a website dedicated to a series of computational problems 
@@ -18,10 +16,8 @@ can be seen in Last_run.txt, contained in the same directory as this Readme.
 As of 6/24/2013 I have solved 42 out of 421 problems, mostly in Python.
 More solutions will be added here as they are reviewed, and as time permits.
 
-
-**********************
-* ~ INCLUDED FILES ~ *
-**********************
+INCLUDED FILES
+==============
 
 Root directory:
   * This Readme
@@ -31,16 +27,16 @@ Root directory:
 	the execution time are provided.
 
 'src' directory:
-  * Prob#.py (or .c, etc.)
+  * prob#.py (or .c, etc.)
 	These are the source files for the solutions, 
 	where # is the number of the problem as listed at
 	http://projecteuler.net/problems
 
-  * EulerUtility.py
+  * eulerutility.py
 	Any functions that are used in multiple solutions
 	are located here.
   
-  * CreateBatch_RunAll.py
+  * buildbatchrun.py
 	Running this script will create a batch file
 	named run_all.bat that runs all solutions 
 	and overwrites Last_run.txt.
@@ -50,10 +46,8 @@ Root directory:
     The data contained in them always comes from the problem statements
     as seen at http://projecteuler.net/problems 
 
-
-**********************
-* ~~~~~~ LEGAL ~~~~~ *
-**********************
+LEGAL
+=====
 
 All code herein
 Copyright (C) 2013 Adam Beagle - All Rights Reserved
