@@ -1,17 +1,17 @@
 """
-CreateBatch_RunAll.py
+buildbatchrun.py
 
-Writes a batch file that runs all the Prob*.py files in order,
+Writes a batch file that runs all the prob*.py files in order,
 and writes their output to a file.
 
 This script must be rerun when a new solution is added, or
 the new solution(s) will not be included in a batch run.
 
 This script must be located in the same directory as the
-Prob*.py files to run as intended.
-
+prob*.py files to run as intended.
 
 Author: Adam Beagle
+
 """
 
 import re
