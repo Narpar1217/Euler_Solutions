@@ -1,5 +1,9 @@
+Project Euler Solutions
+=======================
+Author: Adam Beagle
+
 GENERAL
-=======
+-------
 
 In this repository are my solutions to select problems from Project Euler.
 Project Euler "is a website dedicated to a series of computational problems 
@@ -17,7 +21,7 @@ As of 6/24/2013 I have solved 42 out of 421 problems, mostly in Python.
 More solutions will be added here as they are reviewed, and as time permits.
 
 INCLUDED FILES
-==============
+--------------
 
 Root directory:
   * This Readme
@@ -47,7 +51,7 @@ Root directory:
     as seen at http://projecteuler.net/problems 
 
 LEGAL
-=====
+-----
 
 All code herein
 Copyright (C) 2013 Adam Beagle - All Rights Reserved
